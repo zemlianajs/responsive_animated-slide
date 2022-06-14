@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./animate.css"/>
+    <title>Document</title>
+    <style>
+        .animate {
+            margin-top: 50vh;
+            text-align: center;
+            font-size: 30px;
+            height: 300px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wow animate slideInLeft" data-wow-duration="3s" data-wow-delay="1s">
+    Анимируемый контент
+</div>
+
+<div class="wow animate fadeIn">
+    Анимируемый контент2
+</div>
+<div class="wow animate bounceInDown">
+    Анимируемый контент3
+</div>
+
+<div class="animated infinite bounce delay-5s slower animate">Пример</div>
+
+<script src="./wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
